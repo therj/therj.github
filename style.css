@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}
+
+.container > div {
+  margin-bottom: 10px;
+}
+.topic.intro {
+  margin-bottom: 0px;
+}
+
+p,
+ul {
+  line-height: 1.7;
+}
+
+.intro {
+  margin: auto;
+}
+
+.intro p {
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 16px;
+}
+
+.intro p a,
+.work li a,
+.reference-email a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.intro p.name {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.name p {
+  display: inline-block;
+}
+.objective p.text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.title::first-letter,
+.fName::first-letter {
+  font-size: 200%;
+}
+p {
+  font-size: 16px;
+}
+
+.title + ul {
+  list-style: none;
+}
+.title + p,
+.title + ul {
+  margin-left: 1%;
+}
+.reference {
+  margin-bottom: 20px;
+  font-size: 110%;
+}
+.reference-name {
+  font-size: 130%;
+  font-weight: bold;
+}
+.reference-post {
+  font-style: italic;
+  font-size: 101%;
+}
+.reference-college {
+  font-weight: bold;
+}
+hr {
+  margin: 10px auto;
+  width: 98%;
+}
+@media only screen and (max-width: 730px) {
+  .container {
+    width: 85%;
+  }
+}
