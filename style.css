@@ -29,7 +29,7 @@ ul {
   font-weight: bold;
   text-align: center;
   margin: 10px auto;
-  font-size: 16px;
+  font-size: 125%;
 }
 
 .intro p a,
@@ -40,7 +40,7 @@ ul {
 }
 
 .intro p.name {
-  font-size: 24px;
+  font-size: 150%;
   text-transform: uppercase;
 }
 .name p {
@@ -54,15 +54,11 @@ ul {
 .title {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 125%;
 }
 
-.title::first-letter,
-.fName::first-letter {
+.title::first-letter {
   font-size: 200%;
-}
-p {
-  font-size: 16px;
 }
 
 .title + ul {
