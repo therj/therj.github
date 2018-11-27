@@ -12,6 +12,7 @@
 .container > div {
   margin-bottom: 10px;
 }
+
 .topic.intro {
   margin-bottom: 0px;
 }
@@ -43,9 +44,11 @@ ul {
   font-size: 150%;
   text-transform: uppercase;
 }
+
 .name p {
   display: inline-block;
 }
+
 .objective p.text {
   text-align: justify;
   text-justify: inter-word;
@@ -64,31 +67,37 @@ ul {
 .title + ul {
   list-style: none;
 }
+
 .title + p,
 .title + ul {
-  margin-left: 1%;
+  margin-left: 3%;
 }
-.reference {
-  margin-bottom: 20px;
-  font-size: 110%;
-}
+
 .reference-name {
   font-size: 130%;
   font-weight: bold;
 }
+
 .reference-post {
   font-style: italic;
   font-size: 101%;
 }
+
 .reference-college {
   font-weight: bold;
 }
+
 hr {
   margin: 10px auto;
   width: 98%;
 }
+
 @media only screen and (max-width: 730px) {
   .container {
     width: 85%;
+  }
+  .experience > ul li:not(:last-child),
+  .academic > ul li:not(:last-child) {
+    margin-bottom: 5px;
   }
 }
