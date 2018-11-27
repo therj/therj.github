@@ -9,7 +9,7 @@
   margin: auto;
 }
 
-.container > div {
+.container>div {
   margin-bottom: 10px;
 }
 
@@ -64,12 +64,12 @@ ul {
   font-size: 200%;
 }
 
-.title + ul {
+.title+ul {
   list-style: none;
 }
 
-.title + p,
-.title + ul {
+.title+p,
+.title+ul {
   margin-left: 3%;
 }
 
@@ -87,17 +87,23 @@ ul {
   font-weight: bold;
 }
 
+li.reference:not(:last-child) {
+  margin-bottom: 15px;
+}
+
 hr {
   margin: 10px auto;
   width: 98%;
 }
 
+
 @media only screen and (max-width: 730px) {
   .container {
     width: 85%;
   }
-  .experience > ul li:not(:last-child),
-  .academic > ul li:not(:last-child) {
+
+  .experience>ul li:not(:last-child),
+  .academic>ul li:not(:last-child) {
     margin-bottom: 5px;
   }
 }
