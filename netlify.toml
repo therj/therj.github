@@ -17,16 +17,16 @@
 
 # A basic redirect rule
 [[redirects]]
-  from = "http?://rjoshi.netlify.com/*"
+  from = "http://rjoshi.netlify.com/*"
   to = "https://cv.rjoshi.net/:splat"
   status = 301
   force = true
 
-# [[redirects]]
-#   from = "https://rjoshi.netlify.com/*"
-#   to = "https://cv.rjoshi.net/:splat"
-#   status = 301
-#   force = true
+[[redirects]]
+  from = "https://rjoshi.netlify.com/*"
+  to = "https://cv.rjoshi.net/:splat"
+  status = 301
+  force = true
 
 # A redirect rule with all the supported properties
   [redirects.headers]
