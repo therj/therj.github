@@ -2,7 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- PWA start -->
+    <link rel="manifest" href="manifest.json" />
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Space Missions" />
+    <meta name="apple-mobile-web-app-title" content="Space Missions" />
+    <meta name="theme-color" content="#FF9800" />
+    <meta name="msapplication-navbutton-color" content="#FF9800" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="msapplication-starturl" content="/index.html" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="icon" sizes="128x128" href="/images/touch/icon-128x128.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="128x128"
+      href="/images/touch/icon-128x128.png"
+    />
+    <link rel="icon" sizes="192x192" href="icon-192x192.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="/images/touch/icon-192x192.png"
+    />
+    <link rel="icon" sizes="256x256" href="/images/touch/icon-256x256.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="256x256"
+      href="/images/touch/icon-256x256.png"
+    />
+    <link rel="icon" sizes="384x384" href="/images/touch/icon-384x384.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="384x384"
+      href="/images/touch/icon-384x384.png"
+    />
+    <link rel="icon" sizes="512x512" href="/images/touch/icon-512x512.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="512x512"
+      href="/images/touch/icon-512x512.png"
+    />
+
+    <!-- PWA End -->
+
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+
     <link rel="stylesheet" href="./style.css" />
     <link rel="canonical" href="https://cv.rjoshi.net/" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -176,5 +230,14 @@
       </div>
     </div>
     <script src="./script.js"></script>
+
+    <!-- Register serviceWorker, if supported! -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./service-worker.js");
+        });
+      }
+    </script>
   </body>
 </html>

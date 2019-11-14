@@ -1,0 +1,30 @@
+{
+  "name": "RJOSHI",
+  "short_name": "RJOSHI",
+  "start_url": "/",
+  "lang": "en-US",
+  "theme_color": "#0099fe",
+  "background_color": "#0099fe",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "net.rjoshi"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/images/rjoshi-blue-fill.png",
+      "type": "image/png",
+      "sizes": "500x500"
+    },
+    {
+      "src": "/images/favicon.ico",
+      "type": "image/ico",
+      "sizes": "128x128"
+    }
+  ]
+}
