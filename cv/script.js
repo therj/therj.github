@@ -60,13 +60,18 @@ window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   // Stash the event so it can be triggered later.
   deferredPrompt = e;
+  e.prompt()
   // showAddToHomeScreen();
-  console.log('TODO: showAddToHomeScreen()');
+  // TODO: custom prompt or bribe!
+  // UI
+  // showAddToHomeScreen()
 });
 
 
+
 window.addEventListener('appinstalled', (evt) => {
-  console.log('PWA a2hs installed!');
+  // TODO: A thank you message, probably?
+  console.log('PWA a2hs!');
 });
 
 
@@ -96,4 +101,22 @@ function addToHomeScreen() {
       deferredPrompt = null;
 
     });
+}
+
+
+
+// Detects if device is on iOS
+const isIos = () => {
+  const userAgent = window.navigator.userAgent.toLowerCase();
+  return /iphone|ipad|ipod/.test(userAgent);
+}
+
+// Detects if device is in standalone mode
+const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+
+// Checks if should display install popup notification:
+if (isIos() && !isInStandaloneMode()) {
+  // TODO: Notify iOS users to add to homescreen
+  // Needs manual action!
+
 }

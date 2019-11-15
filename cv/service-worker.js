@@ -1,13 +1,13 @@
 let deferredPrompt;
 
-const CACHE_VERSION = 2
+const CACHE_VERSION = 4
 const cacheName = `cache-v${CACHE_VERSION}`;
 const precacheResources = [
   '/',
   'index.html',
   'style.css',
   'script.js',
-  // 'images/*'
+  // 'images/'
 ];
 
 self.addEventListener('install', event => {
@@ -25,7 +25,7 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
-  console.log('Fetch intercepted for:', event.request.url);
+  // console.log('Fetch intercepted for:', event.request.url);
   event.respondWith(caches.match(event.request)
     .then(cachedResponse => {
       if (cachedResponse) {
