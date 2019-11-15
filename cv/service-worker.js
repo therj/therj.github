@@ -1,6 +1,6 @@
 let deferredPrompt;
 
-const CACHE_VERSION = 1
+const CACHE_VERSION = 2
 const cacheName = `cache-v${CACHE_VERSION}`;
 const precacheResources = [
   '/',
